@@ -1,0 +1,81 @@
+:root {
+  --main-color:#1ac6ff;
+  --header-color: #0080ff;
+  --shadow-color:#999999;
+  --white-color:#ffffff;
+  --header:#0099cc;
+  --text-body:#b3ecff;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#editor {
+  width: 99%;
+  height: 85%;
+  box-shadow: 2px 2px 15px 3px var(--shadow-color);
+  background-color: var(--text-body);
+  overflow-y: scroll;
+  outline: none;
+}
+
+#editor:focus {
+  border: 0 none #FFFfff;
+  outline: none;
+}
+
+.previewContainer {
+  width: 800px;
+  height: 700px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 15px 3px var(--shadow-color);
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.editing {
+  width: 604px;
+  height: 250px;
+  margin: 10px auto;
+}
+
+.eheader, .header {
+  background-color: var(--header);
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  height: 10%;
+}
+
+button {
+  border: none;
+  background-color: var(--header);
+}
+
+.header {
+  height: 4%;
+}
+
+#preview {
+  background-color: var(--text-body);
+  height: 96%;
+}
+
+.Max {
+  width: 98vw;
+  height: 97vh;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
